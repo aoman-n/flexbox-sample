@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header h1 {
+  margin-right: auto;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header li {
+  margin-left: 3rem;
+}
+
+.header li:last-of-type {
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 768px){
+	.header {
+		flex-direction: column;
+	}
+
+	.header h1 {
+		margin: 0 auto 3rem;
+	}
+
+	.header li {
+		margin: 0 1rem;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.header li {
+		margin: 0 .5rem;
+		font-size: 1.2rem;
+	}
+}
